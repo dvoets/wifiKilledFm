@@ -21,6 +21,7 @@
   "readmeFilename": "README.md",
   "gitHead": "64d44ce32a5464bca77dfee2988d312838f9ac32",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "~4"
   }
 }

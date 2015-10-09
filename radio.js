@@ -1,7 +1,13 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+
 app.use(express.static('public'));
-app.get('/radio/play', function (req, res) {
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+app.post('/radio/play', function (req, res) {
+	console.log(req.body);
   res.send('Hello World!');
 });
 
