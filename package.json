@@ -21,6 +21,6 @@
   "readmeFilename": "README.md",
   "gitHead": "64d44ce32a5464bca77dfee2988d312838f9ac32",
   "dependencies": {
-    "express": "^4"
+    "express": "~4"
   }
 }
