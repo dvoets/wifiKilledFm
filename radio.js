@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var spawn = require('child_process').spawn;
+var spawn = require('child_process').spawn
+
+//http://tivo-mplayer.sourceforge.net/docs/mplayer-man.html
 
 var path, radioObject, playing=false;
 
@@ -25,8 +27,6 @@ app.post('/radio/pp', function (req, res) {
 
 	}
 	res.redirect('/');
-	
-	
 });
 
 app.post('/radio/stop', function (req, res) {
@@ -38,6 +38,8 @@ app.post('/radio/stop', function (req, res) {
 		res.redirect('/');
 	}
 });
+
+// volume bijhouden en up en down in een for loop berekenen
 
 var server = app.listen(3000, function () {
   var host = server.address().address;
